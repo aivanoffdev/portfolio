@@ -1,0 +1,43 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "2022 - Actualmente",
+    title: "Desarrollador de Software Backend",
+    company: "Freelance",
+    description:
+      "Diseño y desarrollo de soluciones web personalizadas, con un enfoque en sistemas de gestión y automatización de procesos.",
+  },
+  {
+    date: "Jun 2021 - Ago 2024",
+    title: "Administrador de Sistemas de TI",
+    company: "OSDOP",
+    description:
+      "Encargado del diseño e implementación de infraestructuras de red robustas y seguras, garantizando una conectividad de alta disponibilidad y un rendimiento óptimo. Administré usuarios, permisos y recursos compartidos implementando políticas de seguridad sólidas.",
+  },
+  {
+    date: "Jul 2017 - May 2021",
+    title: "Analista de Soporte de TI",
+    company: "OSDOP",
+    description:
+      "Proporcioné soporte técnico integral in situ, resolviendo una amplia gama de incidencias de hardware, software y redes en delegaciones y subdelegaciones a nivel provincial. Aseguré la comunicación efectiva en reuniones mediante la gestión de la logística técnica y la configuración de equipos audiovisuales.",
+  },
+  {
+    date: "Dic 2015 - Jun 2017",
+    title: "Help Desk L1 / L2",
+    company: "OSDOP",
+    description:
+      "Trabajé en un entorno Help Desk dinámico, utilizando FreshDesk para gestionar tickets y herramientas de acceso remoto para solucionar problemas técnicos.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

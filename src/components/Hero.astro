@@ -1,0 +1,48 @@
+---
+const personalImageAlt = "Agustín Ivanoff"
+import Badge from "@/components/Badge.astro"
+import GitHubIcon from "@/components/icons/GitHub.astro"
+import CVIcon from "@/components/icons/CV.astro"
+import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import MailIcon from "@/components/icons/Mail.astro"
+import SocialPill from "@/components/SocialPill.astro"
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="https://media.licdn.com/dms/image/v2/D4E03AQHrpKJrpEYNQQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1724205017905?e=1730332800&v=beta&t=bWC6KIPJQ0foDTW_eu_hFA0Q2Bh2CK4RRVo1x0X2vCE"
+      alt={personalImageAlt}
+    />
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hola, Soy Agustín Ivanoff
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-amber-500 [&>strong]:text-amber-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+    +9 años de experiencia. <strong
+      >Administrador de Sistemas y Desarrollador Backend PHP</strong>
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:aivanoff.dev@gmail.com">
+      <MailIcon class="size-4" />
+      Contactame
+    </SocialPill>
+    <SocialPill href="https://www.linkedin.com/in/agustin-ivanoff/">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+    <SocialPill href="https://github.com/aivanoffdev">
+      <GitHubIcon class="size-4" />
+      Github
+    </SocialPill>
+    <SocialPill href="./projects/cv.pdf">
+      <CVIcon class="size-4" />
+      CV
+    </SocialPill>
+  </nav>
+</div>
